@@ -1,0 +1,19 @@
+plugins {
+    id("java")
+}
+
+dependencies {
+    compile("com.example:projectA:1.0")
+    compile("com.example:projectB:1.0")
+}
+
+configurations {
+    myConfiguration
+}
+
+dependencies {
+    myConfiguration "com.example:projectB:1.0"
+}
+
+configurations.getByName("myConfiguration").resolve()
+

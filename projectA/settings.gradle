@@ -1,0 +1,3 @@
+if (gradle.parent == null) {
+    includeBuild "../projectB"
+}
