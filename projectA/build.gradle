@@ -13,4 +13,5 @@ dependencies {
     myConfiguration "com.example:projectB:1.0"
 }
 
-//configurations.getByName("myConfiguration").resolve()
+// Comment this out
+configurations.getByName("myConfiguration").resolve()
